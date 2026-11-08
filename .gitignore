@@ -1,0 +1,5 @@
+# never commit private runtime state
+notification_history.enc
+clipboard/
+recently_used.json
+*.enc

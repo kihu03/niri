@@ -1,0 +1,48 @@
+id = "kihu/synthetic-usage"
+name = "Synthetic Usage"
+version = "1.0.0"
+plugin_api = 43
+author = "kihu"
+license = "MIT"
+tags = ["usage", "llm", "synthetic"]
+icon = "coin"
+description = "Synthetic.new quota in the bar: weekly credits remaining plus the rolling 5-hour request window."
+
+[[widget]]
+id = "usage"
+entry = "usage.luau"
+
+  [[widget.setting]]
+  key = "env_file"
+  type = "string"
+  label_key = "settings.env_file.label"
+  description_key = "settings.env_file.description"
+  default = "/home/kinh/.hermes/.env"
+
+  [[widget.setting]]
+  key = "key_var"
+  type = "string"
+  label_key = "settings.key_var.label"
+  description_key = "settings.key_var.description"
+  default = "HERMES_CUSTOM_API_SYNTHETIC_NEW_API_KEY"
+
+  [[widget.setting]]
+  key = "interval_minutes"
+  type = "int"
+  label_key = "settings.interval_minutes.label"
+  description_key = "settings.interval_minutes.description"
+  default = 5
+
+  [[widget.setting]]
+  key = "warn_below"
+  type = "int"
+  label_key = "settings.warn_below.label"
+  description_key = "settings.warn_below.description"
+  default = 15
+
+  [[widget.setting]]
+  key = "show_window"
+  type = "bool"
+  label_key = "settings.show_window.label"
+  description_key = "settings.show_window.description"
+  default = false

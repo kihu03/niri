@@ -1,0 +1,12 @@
+{
+  "settings.env_file.label": "Environment file",
+  "settings.env_file.description": "File the API key is read from. The key never leaves this machine.",
+  "settings.key_var.label": "Key variable",
+  "settings.key_var.description": "Variable name inside that file holding the Synthetic API key.",
+  "settings.interval_minutes.label": "Refresh minutes",
+  "settings.interval_minutes.description": "How often to query the quota endpoint. Quota checks do not count against your subscription.",
+  "settings.warn_below.label": "Warn below percent",
+  "settings.warn_below.description": "Weekly credits remaining at or below this value switch the glyph to a warning.",
+  "settings.show_window.label": "Show 5-hour window",
+  "settings.show_window.description": "Also show the rolling 5-hour request window in the bar text."
+}
