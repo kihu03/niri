@@ -3,3 +3,8 @@ notification_history.enc
 clipboard/
 recently_used.json
 *.enc
+
+# local edit snapshots stay off the repo (old ones live in history: 9901a9e)
+*.bak
+*.bak[0-9]*
+*.bak-*
