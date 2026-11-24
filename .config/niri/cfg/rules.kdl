@@ -44,3 +44,9 @@
           // blur false
     }
 }
+
+// Steam/Proton games open fullscreen (Mod+Shift+F toggles back)
+window-rule {
+    match app-id=r#"^steam_app_"#
+    open-fullscreen true
+}
