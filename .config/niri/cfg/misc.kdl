@@ -8,6 +8,10 @@
         QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
         XDG_CURRENT_DESKTOP "niri"
         XDG_SESSION_TYPE "wayland"
+        // fcitx5 (Bamboo): XWayland apps use XIM, Qt apps use the fcitx5-qt module.
+        // GTK_IM_MODULE intentionally unset: GTK uses Wayland text-input-v3 on niri.
+        XMODIFIERS "@im=fcitx"
+        QT_IM_MODULE "fcitx"
 }
 
     cursor {
